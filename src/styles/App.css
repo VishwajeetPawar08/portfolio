@@ -1,0 +1,100 @@
+/* src/styles/App.css */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+  padding-top: 90px; /* Adjusted space for a slightly taller fixed navbar */
+}
+
+section {
+  padding: 6rem 2rem; /* Increased vertical padding for more breathing room */
+  max-width: 1280px; /* Slightly wider content area */
+  margin: 0 auto;
+  min-height: 90vh; /* Ensure sections are tall enough for scroll animations and presence */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  scroll-margin-top: 90px; /* Adjust for sticky navbar when jumping to section */
+  position: relative; /* For background patterns if desired */
+  overflow: hidden; /* To contain potential animations */
+}
+
+section:nth-of-type(even) {
+  background-color: var(--bg-secondary);
+}
+
+section:nth-of-type(odd) {
+  background-color: var(--bg-light);
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 4rem 1.5rem;
+    min-height: auto; /* Allow sections to shrink on mobile */
+  }
+}
+
+.section-content {
+  width: 100%;
+  max-width: 1000px; /* Slightly wider content max-width */
+}
+
+.grid-container {
+  display: grid;
+  gap: 2.5rem; /* Increased gap */
+  width: 100%;
+  padding-top: 2rem; /* Space between section header and grid items */
+}
+
+.grid-col-1 {
+  grid-template-columns: 1fr;
+}
+
+.grid-col-2 {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Slightly larger min-width for cards */
+}
+
+.grid-col-3 {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* Specific styles for cards/items */
+.card {
+  background-color: var(--bg-light); /* Cards can be light on secondary background */
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 2rem; /* More padding */
+  box-shadow: 0 8px 16px var(--shadow-light); /* Softer, more prominent shadow */
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 12px 24px var(--shadow-medium); /* Deeper shadow on hover */
+}
+
+.card-header {
+  margin-bottom: 1.25rem; /* More spacing */
+}
+
+.card-body {
+  flex-grow: 1;
+}
+
+.card-footer {
+  margin-top: 1.5rem; /* More spacing */
+  display: flex;
+  justify-content: flex-start; /* Align button to start */
+}
