@@ -10,8 +10,8 @@ export const projectData = [
   {
     id: 2,
     name: "MediSpark Insights",
-    details: "UNDER CONSTRUCTION",
-    link: "", // Replace with your hosted link
+    details: "Engineered scalable, high-performance data pipelines using Apache Spark (Scala/PySpark) on Databricks, optimizing distributed computations for processing massive datasets efficiently. Designed and orchestrated end-to-end ETL workflows to transform raw, unstructured data into clean, structured intelligence, generating actionable business insights and enabling stakeholders to make data-driven decisions, improving operational efficiency and supporting strategic initiatives.",
+    link: "https://github.com/VishwajeetPawar08/MediSpark-Insights", // Replace with your hosted link
   },
   {
     id: 3,
