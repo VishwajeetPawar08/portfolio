@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import SectionHeader from "./SectionHeader";
 import { Linkedin, Twitter, Mail, MessageSquare, FileText } from "lucide-react";
 import "../styles/App.css";
-import resumePdf from "../assets/VishwajeetVijay_Pawar_+353894631972 FH.pdf";
 
 const iconVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -136,7 +135,7 @@ const ConnectMe = () => {
         </motion.a>
 
         <motion.a
-          href={resumePdf} 
+          href="https://drive.google.com/drive/folders/1qSf9z4C6ridY3xaFcwSrkKEc8suYHPwC"
           target="_blank"
           variants={iconVariants}
           whileHover="hover"
