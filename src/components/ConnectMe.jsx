@@ -2,8 +2,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import SectionHeader from "./SectionHeader";
-import { Linkedin, Twitter, Mail, MessageSquare } from "lucide-react";
+import { Linkedin, Twitter, Mail, MessageSquare, FileText } from "lucide-react";
 import "../styles/App.css";
+import resumePdf from "../assets/VishwajeetVijay_Pawar_+353894631972 FH.pdf";
 
 const iconVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -115,6 +116,7 @@ const ConnectMe = () => {
 
         <motion.a
           href="mailto:vpawar6254@gmail.com" // Replace with your email
+          target="_blank"
           variants={iconVariants}
           whileHover="hover"
           style={{
@@ -131,6 +133,27 @@ const ConnectMe = () => {
         >
           <Mail size={56} style={{ marginBottom: "0.8rem" }} />
           <span style={{ fontWeight: "500", fontSize: "1.1em" }}>Mail</span>
+        </motion.a>
+
+        <motion.a
+          href={resumePdf} 
+          target="_blank"
+          variants={iconVariants}
+          whileHover="hover"
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            color: "var(--text-dark)",
+            padding: "1.5rem",
+            borderRadius: "var(--radius)",
+            backgroundColor: "var(--bg-light)",
+            boxShadow: "0 4px 10px var(--shadow-light)",
+            border: "1px solid var(--border-color)",
+          }}
+        >
+          <FileText size={56} style={{ marginBottom: "0.8rem" }} />
+          <span style={{ fontWeight: "500", fontSize: "1.1em" }}>Download Resume</span>
         </motion.a>
       </motion.div>
     </section>
