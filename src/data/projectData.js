@@ -15,6 +15,13 @@ export const projectData = [
   },
   {
     id: 3,
+    name: "Fact Checker",
+    details:
+      "This project implements a multi-model ensemble for fact verification. It leverages three LLMs for semantic reasoning, alongside Graph Neural Networks (GNN) and Gradient Boosting (GB) for structural and statistical analysis. Final predictions are integrated via a voting mechanism to ensure high-accuracy, cross-validated debunking of misinformation. This project is still under process and yet to be deployed.",
+    link: "", // Replace with your hosted link
+  },
+  {
+    id: 4,
     name: "Vishwajeet: Portfolio",
     details:
       "Utilised the skills acquired in React to build a fully functional personal portfolio, leveraging JavaScript for dynamic data handling and interactivity. Incorporated CSS for customized styling and design consistency, while employing Framer Motion to add smooth animations and seamless transitions, resulting in a visually engaging and responsive user experience.",
