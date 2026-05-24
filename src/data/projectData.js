@@ -17,7 +17,7 @@ export const projectData = [
     id: 3,
     name: "Fact Checker",
     details:
-      "This project implements a multi-model ensemble for fact verification. It leverages three LLMs for semantic reasoning, alongside Graph Neural Networks (GNN) and Gradient Boosting (GB) for structural and statistical analysis. Final predictions are integrated via a voting mechanism to ensure high-accuracy, cross-validated debunking of misinformation. This project is still under process and yet to be deployed.",
+      "This project implements a multi-model ensemble for fact verification. It leverages four LLMs (Gemma, Qwen, Mistral, DeepSeek), alongside a Graph Neural Network (GNN) and Gradient Boosting (GB) for structural and statistical analysis. Final predictions are integrated via majority and weighted voting mechanisms to ensure high-accuracy. The framework has been fully evaluated on the ISOT dataset.",
     link: "", // Replace with your hosted link
   },
   {
@@ -28,3 +28,6 @@ export const projectData = [
     link: "#", // Replace with your hosted link
   },
 ];
+
+
+// surge dist vishwajeetpawarportfolio.surge.sh
