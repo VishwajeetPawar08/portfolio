@@ -18,7 +18,7 @@ export const projectData = [
     name: "Fact Checker",
     details:
       "This project implements a multi-model ensemble for fact verification. It leverages four LLMs (Gemma, Qwen, Mistral, DeepSeek), alongside a Graph Neural Network (GNN) and Gradient Boosting (GB) for structural and statistical analysis. Final predictions are integrated via majority and weighted voting mechanisms to ensure high-accuracy. The framework has been fully evaluated on the ISOT dataset.",
-    link: "", // Replace with your hosted link
+    link: "https://github.com/VishwajeetPawar08/FakeNewsEnsemble", // Replace with your hosted link
   },
   {
     id: 4,
