@@ -19,12 +19,13 @@ export const experienceData = [
     id: 2,
     company: "KWYK PVT LTD",
     logo: kwykLogo, // Path to your logo in public folder
-    roles: "Web Developer Intern",
+    roles: "Data Analyst Intern",
     duration: "March 2022 - June 2022",
     description: [
-      "Designed and developed user interfaces for different kind of web users.",
-      "Focused on creating engaging and accessible user experiences.",
-      "Utilized CSS, PHP and JavaScript for animations to deliver high-quality code."
+      "Built automated ETL pipelines using ADF and Databricks, improving data processing efficiency by 40%.",
+      "Migrated data from Azure SQL to CosmosDB, with zero data loss and maintaining data integrity.",
+      "Created Power BI dashboards and optimized SQL queries to deliver actionable business insights."
+      
     ],
   },
 ];

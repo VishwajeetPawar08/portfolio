@@ -155,6 +155,7 @@ const ConnectMe = () => {
           <span style={{ fontWeight: "500", fontSize: "1.1em" }}>Download Resume</span>
         </motion.a>
       </motion.div>
+
     </section>
   );
 };
